@@ -1,0 +1,260 @@
+@import "null.css";
+@import "style.media.css";
+@import "style.main.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+    
+    font-family: 'Lato';
+}
+
+.wraper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* overflow: hidden; */
+    display: flex;    
+    flex-direction: column;
+}
+
+[class*="__container"] {
+    max-width: 78.75rem ;
+    padding: 0 0.9375rem;
+    margin: 0 auto;
+}
+
+/* НАВИГАЦИЯ НАЧАЛО */
+
+.nav {
+    padding: 1.25rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+}
+.nav__container {
+    
+}
+.nav__contant {
+    display: grid;
+    grid-template-columns: 8.12rem auto auto;
+    align-items: center;
+    column-gap:3.75rem ;
+    font-weight: 700;
+}
+.nav__logo {
+}
+.nav-logo__img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.burger__menu {
+    display: none;
+}
+.menu__burger {
+}
+
+.nav__list {
+}
+.nav-list__items {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 2.5rem;
+    justify-content: start;
+}
+.nav-list__item {
+}
+.nav-list__item:hover{
+    text-shadow: 2px 2px 5px #000;
+    transition: all 0.3s ease-out 0.1s;
+}
+.nav-list__link {
+}
+.nav__info {
+    display: grid;
+    grid-template-columns: repeat(2 ,auto);
+    justify-items: end;
+}
+.nav-info__button {
+    display: flex;
+    align-items: center;
+    column-gap: 2.25rem;
+}
+.nav-info__link {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    border-radius: 4px;
+    background-color: #FF3F3A;
+    color: #fff;
+    transition: all 0.3s ease-in 0.2s;
+}
+.nav-info__link:hover{
+    background-color: #fff;
+    color: #FF3F3A;
+    transition: all 0.3s ease-in 0.2s;
+}
+.nav__account{
+    display: flex;
+}
+.nav-account__link-nav {
+    display: flex;
+    column-gap: 0.5rem;
+    transition: all 0.3s;
+}
+.nav-account__link-nav::before{
+    content: url(/img/Profile.svg); 
+}
+.nav-account__link-nav:hover{
+    border-bottom: 0.5px solid #000;
+    transition: all 0.3s ease-out 0.2s;
+}
+.nav-account__space {
+    margin: 0 0.5rem;
+}
+.nav-account__link{
+    transition: all 0.3;
+}
+
+.nav-account__link:hover{
+    border-bottom: 0.5px solid #000;
+    transition: all 0.3s ease-out 0.2s;
+}
+
+/* ----------------- НАВИГАЦИЯ КОНЕЦ -------------- */
+
+/* ----HEADER--MAIN--НАЧАЛО---- */
+
+.header {
+    padding-top: 8.75rem;
+    background: linear-gradient(55.95deg,rgba(255,63,56,.2) 0,rgba(245,93,5,.2) 100%);
+}
+.header__container {
+}
+.header__contant {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 5rem;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 5.25rem auto auto;  
+}
+.header__playvideo {
+    max-width:10.68rem;
+    max-height: 5.25rem;
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    /* margin-bottom: 1.5rem; */
+}
+.header-playvideo__play {
+    display: flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    background: #fc0800f9;
+    background-image: url(/img/Polygon.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+} 
+.header-playvideo__text {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.31rem;
+}
+.header__title {
+    max-width: 31rem;
+    margin-bottom: 3.75rem;
+}
+.header-title__text {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 5.2rem;
+}
+.header__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    column-gap: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16.25rem;
+}
+.header-buttons__about {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    border: 0.5px solid #FF3F3A;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #FF3F3A;
+    transition: all 0.3s ease-in 0.2s;
+}
+.header-buttons__about:hover{
+    background-color: #FF3F3A;
+    color: #fff;
+    transition: all 0.3s ease-in 0.2s;
+}
+.header-buttons__link {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    border: 0.5px solid #FF3F3A;
+    border-radius: 4px;
+    background-color: #FF3F3A;
+    color: #fff;
+    transition: all 0.3s ease-in 0.2s;
+}
+.header-buttons__link:hover{
+background-color: #fff;
+color: #FF3F3A;
+transition: all 0.3s ease-in 0.2s;
+}
+.header__image {
+}
+.header-image__ilustra {
+    display: flex;
+    flex: 1 1 37.62rem;
+    max-width: 100%;
+}
+
+/* ----------- HEADER--MAIN--КОНЕЦ-------- */
+
+/* ------ HEADER--FOOTER--НАЧАЛО------ */
+
+.header__aside {
+    margin-bottom: 5rem ;
+}
+.header-aside__container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4 ,auto);
+}
+.header-aside__items {
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+    align-items: center;
+    justify-content: start;
+    column-gap: 0.75rem;
+}
+.header-aside__value {
+    max-width: 100%;
+    font-size: 2.87rem;
+    font-weight: 900;
+}
+.header-aside__text {
+}
+.header-aside__decore {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #FF3F3A;
+    border-radius: 50%;
+    align-self: center;
+}
+
+/* ---------- HEADER--FOOTER--КОНЕЦ-------- */
